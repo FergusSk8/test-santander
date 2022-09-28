@@ -1,0 +1,15 @@
+<table class="table table-container table-striped" *ngIf="headers && rows">
+  <thead>
+  <tr>
+    <th scope="col" *ngFor="let item of headers">{{item}}</th>
+  </tr>
+  </thead>
+  <tbody class="table-group-divider">
+  <tr *ngFor="let row of rows">
+    <th scope="row" *ngFor="let item of row">{{ item }}</th>
+    <td class="d-flex justify-content-center">
+      <button class="btn btn-primary">Ver...</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
